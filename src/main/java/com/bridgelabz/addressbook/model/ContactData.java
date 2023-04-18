@@ -30,6 +30,14 @@ public class ContactData {
     public ContactData() {
     }
 
+    public int getContact_id() {
+        return contact_id;
+    }
+
+    public void setContact_id(int contact_id) {
+        this.contact_id = contact_id;
+    }
+
     public String getFirstName() {
         return firstName;
     }

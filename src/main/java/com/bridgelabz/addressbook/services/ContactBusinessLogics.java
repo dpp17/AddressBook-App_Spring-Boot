@@ -2,34 +2,45 @@ package com.bridgelabz.addressbook.services;
 
 import com.bridgelabz.addressbook.dto.ContactDTO;
 import com.bridgelabz.addressbook.interfaces.IContactBusinessLogics;
+import com.bridgelabz.addressbook.model.ContactData;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class ContactBusinessLogics implements IContactBusinessLogics {
 
+    List<ContactData> contactDataList = new ArrayList<ContactData>();
     @Override
     public String addContact(ContactDTO contactDTO) {
-        return null;
+        ContactData contactData = new ContactData(contactDTO);
+        contactDataList.add(contactData);
+        return "Saved";
     }
 
     @Override
     public String getContactByID(int id) {
-        return null;
+        List<ContactData> list = contactDataList.stream().filter(data->data.getContact_id() == id).collect(Collectors.toList());
+        return list.toString();
     }
 
     @Override
     public String getAllContact() {
-        return null;
+        return contactDataList.toString();
     }
 
     @Override
     public String deleteContactByID(int id) {
-        return null;
+        contactDataList.remove(id);
+        return "deleted with ID :: " + id;
     }
 
     @Override
     public String deleteAllContact() {
-        return null;
+        contactDataList = null;
+        return "All Contact Deleted";
     }
 
     @Override
