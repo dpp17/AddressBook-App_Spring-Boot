@@ -1,6 +1,7 @@
 package com.bridgelabz.addressbook.controller;
 
 import com.bridgelabz.addressbook.dto.ContactDTO;
+import com.bridgelabz.addressbook.interfaces.IContactBusinessLogics;
 import com.bridgelabz.addressbook.model.ContactData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -15,37 +16,36 @@ import java.util.stream.Collectors;
 @RequestMapping("/ab")
 public class AddressBookController {
 
-    private List<ContactData> contactList = new ArrayList<>();
+    @Autowired
+    private IContactBusinessLogics iServices;
+
     @PostMapping("/save")
-    public ResponseEntity<String> saveContact(ContactDTO contactDTO){
-        ContactData contactData= new ContactData(contactDTO);
-        contactList.add(contactData);
-        return new ResponseEntity<>("Data Saved Successfully :: "+contactData.getFirstName() +" : "+contactData.getPhoneNumber(), HttpStatus.CREATED);
+    public String saveContact(ContactDTO contactDTO){
+        return  iServices.addContact(contactDTO);
     }
 
     @GetMapping("/getContact/{id}")
     public String getContactByID(@PathVariable int id){
-        return "Requested Data :: " + contactList.get(id);
+        return iServices.getContactByID(id);
     }
 
     @GetMapping("/getAllContact")
     public String getAllContact(){
-        return contactList.toString();
+        return iServices.getAllContact();
     }
 
     @DeleteMapping("/deleteContact/{id}")
     public String deleteContactByID(@PathVariable int id){
-        return "delete " + id;
+        return iServices.deleteContactByID(id);
     }
 
     @DeleteMapping("/deleteAllContact")
     public String deleteAllContact(){
-        contactList = null;
-        return "Contacts deleted";
+        return iServices.deleteAllContact();
     }
 
     @PutMapping("/editContact/{id}")
     public String updateContactByID(@PathVariable int id){
-        return "edited";
+        return iServices.updateContactDetailsByID(id);
     }
 }
