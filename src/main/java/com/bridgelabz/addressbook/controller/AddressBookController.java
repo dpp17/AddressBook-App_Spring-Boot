@@ -1,26 +1,36 @@
 package com.bridgelabz.addressbook.controller;
 
+import com.bridgelabz.addressbook.dto.ContactDTO;
+import com.bridgelabz.addressbook.model.ContactData;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/ab")
 public class AddressBookController {
 
+    private List<ContactData> contactList = new ArrayList<>();
     @PostMapping("/save")
-    public ResponseEntity<String> saveContact(@RequestParam String firstName, @RequestParam String mobileNumber){
-        return new ResponseEntity<>("Data Saved Successfully :: "+firstName +" : "+mobileNumber, HttpStatus.CREATED);
+    public ResponseEntity<String> saveContact(ContactDTO contactDTO){
+        ContactData contactData= new ContactData(contactDTO);
+        contactList.add(contactData);
+        return new ResponseEntity<>("Data Saved Successfully :: "+contactData.getFirstName() +" : "+contactData.getPhoneNumber(), HttpStatus.CREATED);
     }
 
     @GetMapping("/getContact/{id}")
     public String getContactByID(@PathVariable int id){
-        return "id :: " + id;
+        return "Requested Data :: " + contactList.get(id);
     }
 
     @GetMapping("/getAllContact")
     public String getAllContact(){
-        return "All Contact";
+        return contactList.toString();
     }
 
     @DeleteMapping("/deleteContact/{id}")
@@ -30,7 +40,8 @@ public class AddressBookController {
 
     @DeleteMapping("/deleteAllContact")
     public String deleteAllContact(){
-        return "delete All Contacts";
+        contactList = null;
+        return "Contacts deleted";
     }
 
     @PutMapping("/editContact/{id}")
