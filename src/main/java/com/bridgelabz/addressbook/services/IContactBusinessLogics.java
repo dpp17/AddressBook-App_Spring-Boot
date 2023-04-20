@@ -1,11 +1,12 @@
 package com.bridgelabz.addressbook.services;
 
 import com.bridgelabz.addressbook.dto.ContactDTO;
+import com.bridgelabz.addressbook.dto.ResponseDTO;
 import com.bridgelabz.addressbook.model.ContactData;
 
 public interface IContactBusinessLogics {
 
-    String addContact(ContactDTO contactDTO);
+    ResponseDTO addContact(ContactDTO contactDTO);
 
     String getContactByID(int id);
 

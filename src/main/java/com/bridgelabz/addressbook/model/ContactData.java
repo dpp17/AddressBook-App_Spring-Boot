@@ -22,9 +22,9 @@ public class ContactData {
     private String city;
     private String state;
     private String email;
-    private int zip;
+    private String zip;
     private String phoneNumber;
-    private long aadharCardNumber;
+    private String aadharCardNumber;
 
     public ContactData(ContactDTO contactDTO) {
         this.firstName = contactDTO.firstName;

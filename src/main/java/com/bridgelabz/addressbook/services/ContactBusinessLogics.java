@@ -1,6 +1,7 @@
 package com.bridgelabz.addressbook.services;
 
 import com.bridgelabz.addressbook.dto.ContactDTO;
+import com.bridgelabz.addressbook.dto.ResponseDTO;
 import com.bridgelabz.addressbook.model.ContactData;
 import com.bridgelabz.addressbook.repository.ContactRepo;
 import lombok.extern.slf4j.Slf4j;
@@ -16,11 +17,12 @@ public class ContactBusinessLogics implements IContactBusinessLogics {
     private ContactRepo contactRepo;
 
     @Override
-    public String addContact(ContactDTO contactDTO) {
+    public ResponseDTO addContact(ContactDTO contactDTO) {
         ContactData contactData = new ContactData(contactDTO);
         contactRepo.save(contactData);
         log.info("Contact added to DB:: " + contactData.toString());
-        return "Contact Saved SuccessFully";
+        ResponseDTO responseDTO = new ResponseDTO("Contact Saved SuccessFully", contactData);
+        return responseDTO;
     }
 
     @Override

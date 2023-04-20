@@ -1,0 +1,320 @@
+2023-04-21T02:55:04.372+05:30  WARN 11736 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h1m57s837ms812µs400ns).
+2023-04-21T03:12:51.298+05:30  WARN 11736 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m51s713ms885µs300ns).
+2023-04-21T03:29:01.474+05:30  INFO 11736 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-21T03:29:01.715+05:30  INFO 11736 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-21T03:29:01.728+05:30  INFO 11736 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-21T03:29:15.932+05:30  INFO 14792 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Starting AddressbookApplication using Java 19.0.1 with PID 14792 (D:\CFP_Workbench\Assignment\addressbook\target\classes started by root in D:\CFP_Workbench\Assignment\addressbook)
+2023-04-21T03:29:15.937+05:30 DEBUG 14792 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-21T03:29:15.939+05:30  INFO 14792 --- [restartedMain] c.b.addressbook.AddressbookApplication   : The following 1 profile is active: "dev"
+2023-04-21T03:29:16.124+05:30  INFO 14792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-21T03:29:16.124+05:30  INFO 14792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-21T03:29:17.906+05:30  INFO 14792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-21T03:29:18.054+05:30  INFO 14792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125 ms. Found 1 JPA repository interfaces.
+2023-04-21T03:29:20.501+05:30  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-21T03:29:20.550+05:30  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-21T03:29:20.551+05:30  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-21T03:29:20.770+05:30  INFO 14792 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-21T03:29:20.771+05:30  INFO 14792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4645 ms
+2023-04-21T03:29:22.390+05:30  INFO 14792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-21T03:29:23.016+05:30  INFO 14792 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a5b2656
+2023-04-21T03:29:23.019+05:30  INFO 14792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-21T03:29:23.389+05:30  INFO 14792 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-21T03:29:25.470+05:30  INFO 14792 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-21T03:29:25.998+05:30  WARN 14792 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-21T03:29:26.637+05:30  INFO 14792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-21T03:29:26.694+05:30  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-21T03:29:26.709+05:30  INFO 14792 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Started AddressbookApplication in 11.838 seconds (process running for 13.063)
+2023-04-21T03:29:26.717+05:30  INFO 14792 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Address Book Application Started SuccessFully.....!!!
+2023-04-21T03:29:26.718+05:30  INFO 14792 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Application is started in DEV environment
+2023-04-21T03:29:26.719+05:30  INFO 14792 --- [restartedMain] c.b.addressbook.AddressbookApplication   : MySQL Database UserName is ::  root
+2023-04-21T03:29:26.720+05:30  INFO 14792 --- [restartedMain] c.b.addressbook.AddressbookApplication   : MySQL Database Password is ::  Lambop@12345
+2023-04-21T03:35:03.532+05:30  INFO 14792 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-21T03:35:03.577+05:30  WARN 14792 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2023-04-21T03:35:30.231+05:30 ERROR 14792 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.Pattern' validating type 'java.lang.Long'. Check configuration for 'aadharCardNumber'] with root cause
+
+jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.Pattern' validating type 'java.lang.Long'. Check configuration for 'aadharCardNumber'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:58) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:104) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:66) ~[spring-boot-autoconfigure-3.0.5.jar:3.0.5]
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:932) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:248) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:142) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:181) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:148) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:563) ~[tomcat-embed-core-10.1.7.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631) ~[tomcat-embed-core-10.1.7.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-04-21T03:36:27.208+05:30  INFO 14792 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-21T03:36:27.251+05:30  INFO 14792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-21T03:36:27.267+05:30  INFO 14792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-21T03:37:00.650+05:30  INFO 6492 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Starting AddressbookApplication using Java 19.0.1 with PID 6492 (D:\CFP_Workbench\Assignment\addressbook\target\classes started by root in D:\CFP_Workbench\Assignment\addressbook)
+2023-04-21T03:37:00.655+05:30 DEBUG 6492 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-21T03:37:00.657+05:30  INFO 6492 --- [restartedMain] c.b.addressbook.AddressbookApplication   : The following 1 profile is active: "dev"
+2023-04-21T03:37:00.778+05:30  INFO 6492 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-21T03:37:00.779+05:30  INFO 6492 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-21T03:37:02.319+05:30  INFO 6492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-21T03:37:02.452+05:30  INFO 6492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 113 ms. Found 1 JPA repository interfaces.
+2023-04-21T03:37:04.067+05:30  INFO 6492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-21T03:37:04.092+05:30  INFO 6492 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-21T03:37:04.093+05:30  INFO 6492 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-21T03:37:04.239+05:30  INFO 6492 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-21T03:37:04.240+05:30  INFO 6492 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3460 ms
+2023-04-21T03:37:05.222+05:30  INFO 6492 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-21T03:37:05.814+05:30  INFO 6492 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ac5254c
+2023-04-21T03:37:05.817+05:30  INFO 6492 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-21T03:37:05.941+05:30  INFO 6492 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-21T03:37:07.471+05:30  INFO 6492 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-21T03:37:08.058+05:30  WARN 6492 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-21T03:37:08.719+05:30  INFO 6492 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-21T03:37:08.779+05:30  INFO 6492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-21T03:37:08.813+05:30  INFO 6492 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Started AddressbookApplication in 9.111 seconds (process running for 10.233)
+2023-04-21T03:37:08.821+05:30  INFO 6492 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Address Book Application Started SuccessFully.....!!!
+2023-04-21T03:37:08.823+05:30  INFO 6492 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Application is started in DEV environment
+2023-04-21T03:37:08.824+05:30  INFO 6492 --- [restartedMain] c.b.addressbook.AddressbookApplication   : MySQL Database UserName is ::  root
+2023-04-21T03:37:08.824+05:30  INFO 6492 --- [restartedMain] c.b.addressbook.AddressbookApplication   : MySQL Database Password is ::  Lambop@12345
+2023-04-21T03:37:16.276+05:30  INFO 6492 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-21T03:37:16.515+05:30 ERROR 6492 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.Pattern' validating type 'java.lang.Integer'. Check configuration for 'zip'] with root cause
+
+jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.Pattern' validating type 'java.lang.Integer'. Check configuration for 'zip'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:58) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:104) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:66) ~[spring-boot-autoconfigure-3.0.5.jar:3.0.5]
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:932) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:248) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:142) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:181) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:148) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:563) ~[tomcat-embed-core-10.1.7.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631) ~[tomcat-embed-core-10.1.7.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-04-21T03:38:27.332+05:30  INFO 6492 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-21T03:38:27.370+05:30  INFO 6492 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-21T03:38:27.385+05:30  INFO 6492 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-21T03:38:38.740+05:30  INFO 18660 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Starting AddressbookApplication using Java 19.0.1 with PID 18660 (D:\CFP_Workbench\Assignment\addressbook\target\classes started by root in D:\CFP_Workbench\Assignment\addressbook)
+2023-04-21T03:38:38.744+05:30 DEBUG 18660 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-21T03:38:38.747+05:30  INFO 18660 --- [restartedMain] c.b.addressbook.AddressbookApplication   : The following 1 profile is active: "dev"
+2023-04-21T03:38:38.880+05:30  INFO 18660 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-21T03:38:38.880+05:30  INFO 18660 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-21T03:38:40.417+05:30  INFO 18660 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-21T03:38:40.553+05:30  INFO 18660 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116 ms. Found 1 JPA repository interfaces.
+2023-04-21T03:38:42.140+05:30  INFO 18660 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-21T03:38:42.172+05:30  INFO 18660 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-21T03:38:42.173+05:30  INFO 18660 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-21T03:38:42.304+05:30  INFO 18660 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-21T03:38:42.305+05:30  INFO 18660 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3424 ms
+2023-04-21T03:38:43.382+05:30  INFO 18660 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-21T03:38:43.902+05:30  INFO 18660 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4827eca2
+2023-04-21T03:38:43.905+05:30  INFO 18660 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-21T03:38:44.014+05:30  INFO 18660 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-21T03:38:45.591+05:30  INFO 18660 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-21T03:38:46.180+05:30  WARN 18660 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-21T03:38:46.821+05:30  INFO 18660 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-21T03:38:46.887+05:30  INFO 18660 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-21T03:38:46.906+05:30  INFO 18660 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Started AddressbookApplication in 9.163 seconds (process running for 10.318)
+2023-04-21T03:38:46.918+05:30  INFO 18660 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Address Book Application Started SuccessFully.....!!!
+2023-04-21T03:38:46.920+05:30  INFO 18660 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Application is started in DEV environment
+2023-04-21T03:38:46.921+05:30  INFO 18660 --- [restartedMain] c.b.addressbook.AddressbookApplication   : MySQL Database UserName is ::  root
+2023-04-21T03:38:46.922+05:30  INFO 18660 --- [restartedMain] c.b.addressbook.AddressbookApplication   : MySQL Database Password is ::  Lambop@12345
+2023-04-21T03:38:51.811+05:30  INFO 18660 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-21T03:38:52.495+05:30  INFO 18660 --- [http-nio-8080-exec-1] c.b.a.services.ContactBusinessLogics     : Contact added to DB:: ContactData(contact_id=1, firstName=Durga, lastName=Prasad, address=SMQ 234/3 AFS Adampur, city=, state=Punjab, email=test@gmail.com, zip=144102, phoneNumber=9878456512, aadharCardNumber=8789789878987898)
+2023-04-21T03:39:09.271+05:30  WARN 18660 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.bridgelabz.addressbook.controller.AddressBookController.saveContact(com.bridgelabz.addressbook.dto.ContactDTO) with 2 errors: [Field error in object 'contactDTO' on field 'lastName': rejected value []; codes [Pattern.contactDTO.lastName,Pattern.lastName,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactDTO.lastName,lastName]; arguments []; default message [lastName],[Ljakarta.validation.constraints.Pattern$Flag;@57fd27cc,^[A-Z][A-Za-z]{2,}$]; default message [Start LastName With Capital Letter]] [Field error in object 'contactDTO' on field 'firstName': rejected value []; codes [Pattern.contactDTO.firstName,Pattern.firstName,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactDTO.firstName,firstName]; arguments []; default message [firstName],[Ljakarta.validation.constraints.Pattern$Flag;@57fd27cc,^[A-Z][A-Za-z]{2,}$]; default message [Start FirstName With Capital Letter]] ]
+2023-04-21T03:39:42.500+05:30  WARN 18660 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.bridgelabz.addressbook.controller.AddressBookController.saveContact(com.bridgelabz.addressbook.dto.ContactDTO) with 4 errors: [Field error in object 'contactDTO' on field 'address': rejected value []; codes [NotBlank.contactDTO.address,NotBlank.address,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactDTO.address,address]; arguments []; default message [address]]; default message [Address Cannot be empty]] [Field error in object 'contactDTO' on field 'address': rejected value []; codes [Pattern.contactDTO.address,Pattern.address,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactDTO.address,address]; arguments []; default message [address],[Ljakarta.validation.constraints.Pattern$Flag;@57fd27cc,^[^@#$%^&*]+$]; default message [Special Character can't be used]] [Field error in object 'contactDTO' on field 'firstName': rejected value []; codes [Pattern.contactDTO.firstName,Pattern.firstName,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactDTO.firstName,firstName]; arguments []; default message [firstName],[Ljakarta.validation.constraints.Pattern$Flag;@57fd27cc,^[A-Z][A-Za-z]{2,}$]; default message [Start FirstName With Capital Letter]] [Field error in object 'contactDTO' on field 'lastName': rejected value []; codes [Pattern.contactDTO.lastName,Pattern.lastName,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactDTO.lastName,lastName]; arguments []; default message [lastName],[Ljakarta.validation.constraints.Pattern$Flag;@57fd27cc,^[A-Z][A-Za-z]{2,}$]; default message [Start LastName With Capital Letter]] ]
+2023-04-21T03:40:22.037+05:30  INFO 18660 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-21T03:40:22.076+05:30  INFO 18660 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-21T03:40:22.091+05:30  INFO 18660 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-21T03:40:30.075+05:30  INFO 3528 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Starting AddressbookApplication using Java 19.0.1 with PID 3528 (D:\CFP_Workbench\Assignment\addressbook\target\classes started by root in D:\CFP_Workbench\Assignment\addressbook)
+2023-04-21T03:40:30.080+05:30 DEBUG 3528 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-21T03:40:30.081+05:30  INFO 3528 --- [restartedMain] c.b.addressbook.AddressbookApplication   : The following 1 profile is active: "dev"
+2023-04-21T03:40:30.224+05:30  INFO 3528 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-21T03:40:30.225+05:30  INFO 3528 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-21T03:40:31.868+05:30  INFO 3528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-21T03:40:32.018+05:30  INFO 3528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 1 JPA repository interfaces.
+2023-04-21T03:40:33.674+05:30  INFO 3528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-21T03:40:33.699+05:30  INFO 3528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-21T03:40:33.700+05:30  INFO 3528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-21T03:40:33.833+05:30  INFO 3528 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-21T03:40:33.834+05:30  INFO 3528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3606 ms
+2023-04-21T03:40:34.879+05:30  INFO 3528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-21T03:40:35.361+05:30  INFO 3528 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@62cc12df
+2023-04-21T03:40:35.365+05:30  INFO 3528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-21T03:40:35.464+05:30  INFO 3528 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-21T03:40:37.044+05:30  INFO 3528 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-21T03:40:37.586+05:30  WARN 3528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-21T03:40:38.280+05:30  INFO 3528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-21T03:40:38.344+05:30  INFO 3528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-21T03:40:38.363+05:30  INFO 3528 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Started AddressbookApplication in 9.221 seconds (process running for 10.341)
+2023-04-21T03:40:38.370+05:30  INFO 3528 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Address Book Application Started SuccessFully.....!!!
+2023-04-21T03:40:38.371+05:30  INFO 3528 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Application is started in DEV environment
+2023-04-21T03:40:38.372+05:30  INFO 3528 --- [restartedMain] c.b.addressbook.AddressbookApplication   : MySQL Database UserName is ::  root
+2023-04-21T03:40:38.373+05:30  INFO 3528 --- [restartedMain] c.b.addressbook.AddressbookApplication   : MySQL Database Password is ::  Lambop@12345
+2023-04-21T03:40:46.104+05:30  INFO 3528 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-21T03:40:46.437+05:30  WARN 3528 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.bridgelabz.addressbook.controller.AddressBookController.saveContact(com.bridgelabz.addressbook.dto.ContactDTO) with 4 errors: [Field error in object 'contactDTO' on field 'firstName': rejected value []; codes [NotBlank.contactDTO.firstName,NotBlank.firstName,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactDTO.firstName,firstName]; arguments []; default message [firstName]]; default message [FirstName Cannot be empty]] [Field error in object 'contactDTO' on field 'lastName': rejected value []; codes [NotBlank.contactDTO.lastName,NotBlank.lastName,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactDTO.lastName,lastName]; arguments []; default message [lastName]]; default message [LastName Cannot be empty]] [Field error in object 'contactDTO' on field 'firstName': rejected value []; codes [Pattern.contactDTO.firstName,Pattern.firstName,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactDTO.firstName,firstName]; arguments []; default message [firstName],[Ljakarta.validation.constraints.Pattern$Flag;@5325e6e7,^[A-Z][A-Za-z]{2,}$]; default message [Start FirstName With Capital Letter]] [Field error in object 'contactDTO' on field 'lastName': rejected value []; codes [Pattern.contactDTO.lastName,Pattern.lastName,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactDTO.lastName,lastName]; arguments []; default message [lastName],[Ljakarta.validation.constraints.Pattern$Flag;@5325e6e7,^[A-Z][A-Za-z]{2,}$]; default message [Start LastName With Capital Letter]] ]
+2023-04-21T03:41:57.131+05:30  INFO 3528 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-21T03:41:57.171+05:30  INFO 3528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-21T03:41:57.185+05:30  INFO 3528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-21T03:42:08.150+05:30  INFO 15652 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Starting AddressbookApplication using Java 19.0.1 with PID 15652 (D:\CFP_Workbench\Assignment\addressbook\target\classes started by root in D:\CFP_Workbench\Assignment\addressbook)
+2023-04-21T03:42:08.153+05:30 DEBUG 15652 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-21T03:42:08.155+05:30  INFO 15652 --- [restartedMain] c.b.addressbook.AddressbookApplication   : The following 1 profile is active: "dev"
+2023-04-21T03:42:08.331+05:30  INFO 15652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-21T03:42:08.332+05:30  INFO 15652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-21T03:42:10.394+05:30  INFO 15652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-21T03:42:10.552+05:30  INFO 15652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 128 ms. Found 1 JPA repository interfaces.
+2023-04-21T03:42:12.744+05:30  INFO 15652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-21T03:42:12.784+05:30  INFO 15652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-21T03:42:12.784+05:30  INFO 15652 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-21T03:42:12.921+05:30  INFO 15652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-21T03:42:12.921+05:30  INFO 15652 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4588 ms
+2023-04-21T03:42:14.194+05:30  INFO 15652 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-21T03:42:14.911+05:30  INFO 15652 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79f358b8
+2023-04-21T03:42:14.916+05:30  INFO 15652 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-21T03:42:15.065+05:30  INFO 15652 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-21T03:42:17.070+05:30  INFO 15652 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-21T03:42:18.341+05:30  WARN 15652 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-21T03:42:19.831+05:30  INFO 15652 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-21T03:42:19.944+05:30  INFO 15652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-21T03:42:19.990+05:30  INFO 15652 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Started AddressbookApplication in 13.183 seconds (process running for 14.442)
+2023-04-21T03:42:20.001+05:30  INFO 15652 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Address Book Application Started SuccessFully.....!!!
+2023-04-21T03:42:20.009+05:30  INFO 15652 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Application is started in DEV environment
+2023-04-21T03:42:20.010+05:30  INFO 15652 --- [restartedMain] c.b.addressbook.AddressbookApplication   : MySQL Database UserName is ::  root
+2023-04-21T03:42:20.012+05:30  INFO 15652 --- [restartedMain] c.b.addressbook.AddressbookApplication   : MySQL Database Password is ::  Lambop@12345
+2023-04-21T03:46:21.130+05:30  INFO 15652 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-21T03:46:21.170+05:30  INFO 15652 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-21T03:46:21.195+05:30  INFO 15652 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-21T03:47:57.447+05:30  INFO 12800 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Starting AddressbookApplication using Java 19.0.1 with PID 12800 (D:\CFP_Workbench\Assignment\addressbook\target\classes started by root in D:\CFP_Workbench\Assignment\addressbook)
+2023-04-21T03:47:57.452+05:30 DEBUG 12800 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-21T03:47:57.454+05:30  INFO 12800 --- [restartedMain] c.b.addressbook.AddressbookApplication   : The following 1 profile is active: "dev"
+2023-04-21T03:47:57.597+05:30  INFO 12800 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-21T03:47:57.598+05:30  INFO 12800 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-21T03:47:59.167+05:30  INFO 12800 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-21T03:47:59.298+05:30  INFO 12800 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 1 JPA repository interfaces.
+2023-04-21T03:48:00.918+05:30  INFO 12800 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-21T03:48:00.973+05:30  INFO 12800 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-21T03:48:00.974+05:30  INFO 12800 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-21T03:48:01.131+05:30  INFO 12800 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-21T03:48:01.132+05:30  INFO 12800 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3533 ms
+2023-04-21T03:48:02.176+05:30  INFO 12800 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-21T03:48:02.689+05:30  INFO 12800 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9d1c177
+2023-04-21T03:48:02.692+05:30  INFO 12800 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-21T03:48:02.788+05:30  INFO 12800 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-21T03:48:04.318+05:30  INFO 12800 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-21T03:48:04.895+05:30  WARN 12800 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-21T03:48:05.544+05:30  INFO 12800 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-21T03:48:05.603+05:30  INFO 12800 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-21T03:48:05.622+05:30  INFO 12800 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Started AddressbookApplication in 9.093 seconds (process running for 10.192)
+2023-04-21T03:48:05.630+05:30  INFO 12800 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Address Book Application Started SuccessFully.....!!!
+2023-04-21T03:48:05.632+05:30  INFO 12800 --- [restartedMain] c.b.addressbook.AddressbookApplication   : Application is started in DEV environment
+2023-04-21T03:48:05.633+05:30  INFO 12800 --- [restartedMain] c.b.addressbook.AddressbookApplication   : MySQL Database UserName is ::  root
+2023-04-21T03:48:05.633+05:30  INFO 12800 --- [restartedMain] c.b.addressbook.AddressbookApplication   : MySQL Database Password is ::  Lambop@12345
+2023-04-21T03:48:15.443+05:30  INFO 12800 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-21T03:48:15.874+05:30  INFO 12800 --- [http-nio-8080-exec-1] c.b.a.services.ContactBusinessLogics     : Contact added to DB:: ContactData(contact_id=1, firstName=Test, lastName=Pattern, address=sfdfsdfs, city=, state=M P, email=test12@gmail.com, zip=144102, phoneNumber=7878456512, aadharCardNumber=8789789878987898)
+2023-04-21T03:48:48.447+05:30  INFO 12800 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-21T03:48:48.488+05:30  INFO 12800 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-21T03:48:48.499+05:30  INFO 12800 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

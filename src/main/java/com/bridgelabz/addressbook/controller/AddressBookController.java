@@ -1,6 +1,7 @@
 package com.bridgelabz.addressbook.controller;
 
 import com.bridgelabz.addressbook.dto.ContactDTO;
+import com.bridgelabz.addressbook.dto.ResponseDTO;
 import com.bridgelabz.addressbook.services.IContactBusinessLogics;
 import com.bridgelabz.addressbook.model.ContactData;
 import jakarta.validation.Valid;
@@ -16,7 +17,7 @@ public class AddressBookController {
     private IContactBusinessLogics iServices;
 
     @PostMapping("/save")
-    public String saveContact(@Valid @RequestBody ContactDTO contactDTO){
+    public ResponseDTO saveContact(@Valid @RequestBody ContactDTO contactDTO){
         return  iServices.addContact(contactDTO);
     }
 

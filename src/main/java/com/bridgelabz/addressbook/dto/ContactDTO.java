@@ -8,11 +8,11 @@ import lombok.ToString;
 @ToString
 public class ContactDTO {
 
-    @NotNull(message = "FirstName Cannot be empty")
+    @NotBlank(message = "FirstName Cannot be empty")
     @Pattern(regexp = "^[A-Z][A-Za-z]{2,}$", message = "Start FirstName With Capital Letter")
     public String firstName;
 
-    @NotNull(message = "LastName Cannot be empty")
+    @NotBlank(message = "LastName Cannot be empty")
     @Pattern(regexp = "^[A-Z][A-Za-z]{2,}$", message = "Start LastName With Capital Letter")
     public String lastName;
 
@@ -31,7 +31,7 @@ public class ContactDTO {
 
     @NotNull(message = "Zip Code Cannot be empty")
     @Pattern(regexp = "^[1-9][0-9]{5}$", message = "Zip Code must be of 6 digits")
-    public int zip;
+    public String zip;
 
     @NotNull(message = "PhoneNumber Cannot be empty")
     @Pattern(regexp = "^[6789][0-9]{9}$", message = "PhoneNumber must be of 10 digits and in format of 9xxxxxxxxx or 8xxxxxxxxx or 7xxxxxxxxx or 6xxxxxxxxx only")
@@ -39,5 +39,5 @@ public class ContactDTO {
 
     @NotNull(message = "Aadhar Card Number Cannot be empty")
     @Pattern(regexp = "^[1-9][0-9]{15}$", message = "Aadhar Card Number must be of 16 digits start with non-zero digit")
-    public long aadharCardNumber;
+    public String aadharCardNumber;
 }
