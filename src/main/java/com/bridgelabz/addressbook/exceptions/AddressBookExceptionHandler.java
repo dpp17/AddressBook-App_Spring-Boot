@@ -8,6 +8,7 @@ import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -21,6 +22,19 @@ public class AddressBookExceptionHandler {
         List<ObjectError> errorList = exception.getBindingResult().getAllErrors();
         List<String> errorMessage = errorList.stream().map(data->data.getDefaultMessage()).collect(Collectors.toList());
         ResponseDTO responseDTO = new ResponseDTO("Exception Handling while REST API call", errorMessage);
+        return new ResponseEntity<>(responseDTO, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(MethodArgumentTypeMismatchException.class)
+    public ResponseEntity<ResponseDTO> handleMethodArgumentTypeMismatchException(MethodArgumentTypeMismatchException exception){
+        String errorMessage = exception.getMessage();
+        ResponseDTO responseDTO = new ResponseDTO("Invalid Input From User", errorMessage);
+        return new ResponseEntity<>(responseDTO, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(AddressBookIDNotFoundException.class)
+    public ResponseEntity<ResponseDTO> handleAddressBookIDNotFoundException(AddressBookIDNotFoundException exception){
+        ResponseDTO responseDTO = new ResponseDTO("Exception Handling while REST API call", exception.getMessage());
         return new ResponseEntity<>(responseDTO, HttpStatus.BAD_REQUEST);
     }
 }
