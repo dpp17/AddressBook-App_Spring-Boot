@@ -1,50 +1,77 @@
 package com.bridgelabz.addressbook.services;
 
 import com.bridgelabz.addressbook.dto.ContactDTO;
-import com.bridgelabz.addressbook.interfaces.IContactBusinessLogics;
 import com.bridgelabz.addressbook.model.ContactData;
+import com.bridgelabz.addressbook.repository.ContactRepo;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Optional;
 
 @Service
+@Slf4j
 public class ContactBusinessLogics implements IContactBusinessLogics {
+    @Autowired
+    private ContactRepo contactRepo;
 
-    List<ContactData> contactDataList = new ArrayList<ContactData>();
     @Override
     public String addContact(ContactDTO contactDTO) {
         ContactData contactData = new ContactData(contactDTO);
-        contactDataList.add(contactData);
-        return "Saved";
+        contactRepo.save(contactData);
+        log.info("Contact added to DB:: " + contactData.toString());
+        return "Contact Saved SuccessFully";
     }
 
     @Override
     public String getContactByID(int id) {
-        List<ContactData> list = contactDataList.stream().filter(data->data.getContact_id() == id).collect(Collectors.toList());
-        return list.toString();
+       Optional<ContactData> contact = contactRepo.findById(id);
+       return contact.toString();
     }
 
     @Override
     public String getAllContact() {
-        return contactDataList.toString();
+        List<ContactData> contact = contactRepo.findAll();
+        return contact.toString();
     }
 
     @Override
     public String deleteContactByID(int id) {
-        contactDataList.remove(id);
-        return "deleted with ID :: " + id;
+        Optional<ContactData> contact = contactRepo.findById(id);
+        if(contact.isPresent()){
+        contactRepo.deleteById(id);
+            log.warn("Contact deleted from DB:: " + contact.toString());
+            return "deleted with ID :: " + id;
+        }else return "Contact with ID :: "+ id +" not found";
     }
 
     @Override
     public String deleteAllContact() {
-        contactDataList = null;
+        contactRepo.deleteAll();
+        log.warn("All Contact Deleted from DB");
         return "All Contact Deleted";
     }
 
     @Override
-    public String updateContactDetailsByID(int id) {
-        return null;
+    public String updateContactDetailsByID(ContactData contactData ,int id) {
+        Optional<ContactData> contact = contactRepo.findById(id);
+
+        if(contact.isPresent()) {
+            contact.get().setFirstName(contactData.getFirstName());
+            contact.get().setLastName(contactData.getLastName());
+            contact.get().setAddress(contactData.getAddress());
+            contact.get().setCity(contactData.getCity());
+            contact.get().setState(contactData.getState());
+            contact.get().setZip(contactData.getZip());
+            contact.get().setEmail(contactData.getEmail());
+            contact.get().setPhoneNumber(contactData.getPhoneNumber());
+            contact.get().setAadharCardNumber(contactData.getAadharCardNumber());
+
+            contactRepo.save(contact.get());
+            log.debug("Contact edited with ID :: " + id);
+            log.info("Contact saved in DB" + contact.toString());
+            return "Employee Details Edited Successfully...." + contact.toString();
+        }else return"Contact with ID :: "+ id +" not found";
     }
+
 }

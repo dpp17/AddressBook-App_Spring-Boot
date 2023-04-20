@@ -1,6 +1,7 @@
-package com.bridgelabz.addressbook.interfaces;
+package com.bridgelabz.addressbook.services;
 
 import com.bridgelabz.addressbook.dto.ContactDTO;
+import com.bridgelabz.addressbook.model.ContactData;
 
 public interface IContactBusinessLogics {
 
@@ -14,5 +15,5 @@ public interface IContactBusinessLogics {
 
     String deleteAllContact();
 
-    String updateContactDetailsByID(int id);
+    String updateContactDetailsByID(ContactData contactData , int id);
 }
