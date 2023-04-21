@@ -21,9 +21,9 @@ public class AddressBookController {
         return  iServices.addContact(contactDTO);
     }
 
-    @GetMapping("/getContact/{id}")
-    public String getContactByID(@PathVariable int id){
-        return iServices.getContactByID(id);
+    @GetMapping("/getContact/{userToken}")
+    public String getContactByID(@PathVariable String userToken){
+        return iServices.getContactByToken(userToken);
     }
 
     @GetMapping("/getAllContact")
@@ -31,9 +31,9 @@ public class AddressBookController {
         return iServices.getAllContact();
     }
 
-    @DeleteMapping("/deleteContact/{id}")
-    public String deleteContactByID(@PathVariable int id){
-        return iServices.deleteContactByID(id);
+    @DeleteMapping("/deleteContact/{userToken}")
+    public String deleteContactByID(@PathVariable  String userToken){
+        return iServices.deleteContactByToken(userToken);
     }
 
     @DeleteMapping("/deleteAllContact")
@@ -41,9 +41,24 @@ public class AddressBookController {
         return iServices.deleteAllContact();
     }
 
-    @PutMapping("/editContact/{id}")
-    public String updateContactByID(@Valid @RequestBody ContactDTO contactDTO, @PathVariable int id){
+    @PutMapping("/editContact/{userToken}")
+    public String updateContactByID(@Valid @RequestBody ContactDTO contactDTO, @PathVariable String userToken){
         ContactData contactData = new ContactData(contactDTO);
-        return iServices.updateContactDetailsByID(contactData, id);
+        return iServices.updateContactDetailsByToken(contactData, userToken);
     }
+
+    @PostMapping("/register")
+    public ResponseDTO registerUser(@RequestBody ContactDTO contactDTO){
+        return iServices.registerUser(contactDTO);
+    }
+    @GetMapping("/verify/{otp}")
+    public String verifyUser(@PathVariable int otp){
+        return iServices.verifyAccount(otp);
+    }
+    //    @RequestMapping(value="/login",method = RequestMethod.GET)
+    @GetMapping("/login")
+    public String login(@RequestParam int id ,@RequestParam String username,@RequestParam String password){
+        return iServices.loginUser(id,username,password);
+    }
+
 }

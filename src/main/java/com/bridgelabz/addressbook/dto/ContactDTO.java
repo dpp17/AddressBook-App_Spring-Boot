@@ -3,9 +3,13 @@ package com.bridgelabz.addressbook.dto;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 
 @ToString
+@Getter
+@Setter
 public class ContactDTO {
 
     @NotBlank(message = "FirstName Cannot be empty")
@@ -40,4 +44,13 @@ public class ContactDTO {
     @NotNull(message = "Aadhar Card Number Cannot be empty")
     @Pattern(regexp = "^[1-9][0-9]{15}$", message = "Aadhar Card Number must be of 16 digits start with non-zero digit")
     public String aadharCardNumber;
+
+    @NotBlank(message = "UserName Cannot be empty")
+    @Pattern(regexp = "^[a-zA-Z_0-9]{1,}[@$&]{1}[0-9]{4}$", message = "userName must be in format : xxxx@1234")
+    public String userName;
+
+    @NotBlank(message = "UserName Cannot be empty")
+    @Pattern(regexp = "^[a-zA-Z_0-9]{1,}[!@#$%^&*][a-zA-Z_0-9]{1,}$", message = "password must have 1 Special Character")
+    public String password;
+
 }

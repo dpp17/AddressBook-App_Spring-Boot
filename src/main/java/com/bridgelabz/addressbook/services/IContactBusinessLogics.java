@@ -8,13 +8,19 @@ public interface IContactBusinessLogics {
 
     ResponseDTO addContact(ContactDTO contactDTO);
 
-    String getContactByID(int id);
+    String getContactByToken(String userToken);
 
     String getAllContact();
 
-    String deleteContactByID(int id);
+    String deleteContactByToken(String userToken);
 
     String deleteAllContact();
 
-    String updateContactDetailsByID(ContactData contactData , int id);
+    String updateContactDetailsByToken(ContactData contactData , String userToken);
+
+    public ResponseDTO registerUser(ContactDTO contactDTO);
+
+    public String verifyAccount(int OTP);
+
+    public String loginUser(int id,String userName,String password);
 }

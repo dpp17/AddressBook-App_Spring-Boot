@@ -25,16 +25,19 @@ public class ContactData {
     private String zip;
     private String phoneNumber;
     private String aadharCardNumber;
+    private String userName;
+    private String password;
 
     public ContactData(ContactDTO contactDTO) {
-        this.firstName = contactDTO.firstName;
-        this.lastName = contactDTO.lastName;
-        this.address = contactDTO.address;
-        this.city = contactDTO.city;
-        this.state = contactDTO.state;
-        this.email = contactDTO.email;
-        this.zip = contactDTO.zip;
-        this.phoneNumber = contactDTO.phoneNumber;
-        this.aadharCardNumber = contactDTO.aadharCardNumber;
+        this.firstName = contactDTO.getFirstName();
+        this.lastName = contactDTO.getLastName();
+        this.address = contactDTO.getAddress();
+        this.city = contactDTO.getCity();
+        this.state = contactDTO.getState();
+        this.email = contactDTO.getEmail();
+        this.zip = contactDTO.getZip();
+        this.phoneNumber = contactDTO.getPhoneNumber();
+        this.aadharCardNumber = contactDTO.getAadharCardNumber();
+        this.userName = contactDTO.getUserName();
     }
 }
