@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.*;
 
 
 @RestController
-@RequestMapping("/ab")
+@RequestMapping("/addressBook")
 public class AddressBookController {
 
-    @Autowired
-    private IContactBusinessLogics iServices;
+        @Autowired
+        private IContactBusinessLogics iServices;
 
     @PostMapping("/save")
     public ResponseDTO saveContact(@Valid @RequestBody ContactDTO contactDTO){
@@ -45,20 +45,6 @@ public class AddressBookController {
     public String updateContactByID(@Valid @RequestBody ContactDTO contactDTO, @PathVariable String userToken){
         ContactData contactData = new ContactData(contactDTO);
         return iServices.updateContactDetailsByToken(contactData, userToken);
-    }
-
-    @PostMapping("/register")
-    public ResponseDTO registerUser(@RequestBody ContactDTO contactDTO){
-        return iServices.registerUser(contactDTO);
-    }
-    @GetMapping("/verify/{otp}")
-    public String verifyUser(@PathVariable int otp){
-        return iServices.verifyAccount(otp);
-    }
-    //    @RequestMapping(value="/login",method = RequestMethod.GET)
-    @GetMapping("/login")
-    public String login(@RequestParam int id ,@RequestParam String username,@RequestParam String password){
-        return iServices.loginUser(id,username,password);
     }
 
 }

@@ -25,8 +25,7 @@ public class ContactData {
     private String zip;
     private String phoneNumber;
     private String aadharCardNumber;
-    private String userName;
-    private String password;
+
 
     public ContactData(ContactDTO contactDTO) {
         this.firstName = contactDTO.getFirstName();
@@ -38,6 +37,5 @@ public class ContactData {
         this.zip = contactDTO.getZip();
         this.phoneNumber = contactDTO.getPhoneNumber();
         this.aadharCardNumber = contactDTO.getAadharCardNumber();
-        this.userName = contactDTO.getUserName();
     }
 }

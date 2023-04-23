@@ -18,9 +18,4 @@ public interface IContactBusinessLogics {
 
     String updateContactDetailsByToken(ContactData contactData , String userToken);
 
-    public ResponseDTO registerUser(ContactDTO contactDTO);
-
-    public String verifyAccount(int OTP);
-
-    public String loginUser(int id,String userName,String password);
 }
