@@ -24,10 +24,14 @@ public class UserData {
     private int otp;
     private boolean verify;
 
-    public UserData(UserDTO userDTO) {
+    public void updateUserData(UserDTO userDTO) {
         this.userName = userDTO.getUserName();
         this.email = userDTO.getEmail();
         this.phoneNumber = userDTO.getPhoneNumber();
         this.password = userDTO.getPassword();
+    }
+
+    public UserData(UserDTO userDTO) {
+        this.updateUserData(userDTO);
     }
 }

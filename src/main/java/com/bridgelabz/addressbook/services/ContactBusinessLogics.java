@@ -33,8 +33,8 @@ public class ContactBusinessLogics implements IContactBusinessLogics {
         log.info("Contact added to DB:: " + contactData.toString());
 //        ResponseDTO responseDTO = new ResponseDTO("Contact Saved SuccessFully", contactData);
         String token = jwtToken.createToken(contactData.getContact_id());
-        emailService.sendEmail(contactDTO.getEmail(),"Data Added Successfully",
-                "Hey..."+contactData.getFirstName()+"\n You have been successfully added the data.\n\n"+contactData);
+//        emailService.sendEmail(contactDTO.getEmail(),"Data Added Successfully",
+//                "Hey..."+contactData.getFirstName()+"\n You have been successfully added the data.\n\n"+contactData);
         return new ResponseDTO(token,contactData);
     }
 
@@ -46,9 +46,8 @@ public class ContactBusinessLogics implements IContactBusinessLogics {
     }
 
     @Override
-    public String getAllContact() {
-        List<ContactData> contact = contactRepo.findAll();
-        return contact.toString();
+    public List<ContactData> getAllContact() {
+        return contactRepo.findAll();
     }
 
     @Override
@@ -68,20 +67,12 @@ public class ContactBusinessLogics implements IContactBusinessLogics {
     }
 
     @Override
-    public String updateContactDetailsByToken(ContactData contactData ,String Token) {
+    public String updateContactDetailsByToken(ContactDTO contactData ,String Token) {
         int id = jwtToken.decodeToken(Token);
         ContactData contact = contactRepo.findById(id).orElseThrow(()->new AddressBookIDNotFoundException("Employee not Found with ID:: " + id));
 
 
-        contact.setFirstName(contactData.getFirstName());
-        contact.setLastName(contactData.getLastName());
-        contact.setAddress(contactData.getAddress());
-        contact.setCity(contactData.getCity());
-        contact.setState(contactData.getState());
-        contact.setZip(contactData.getZip());
-        contact.setEmail(contactData.getEmail());
-        contact.setPhoneNumber(contactData.getPhoneNumber());
-        contact.setAadharCardNumber(contactData.getAadharCardNumber());
+        contact.updateContactData(contactData);
 
             contactRepo.save(contact);
             log.debug("Contact edited with ID :: " + id);

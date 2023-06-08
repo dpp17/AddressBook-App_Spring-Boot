@@ -12,7 +12,7 @@ public class UserDTO {
     @Pattern(regexp = "^[a-zA-Z_0-9]{1,}[@$&]{1}[0-9]{4}$", message = "userName must be in format : xxxx@1234")
     public String userName;
 
-    @NotBlank(message = "UserName Cannot be empty")
+    @NotBlank(message = "Password Cannot be empty")
     @Pattern(regexp = "^[a-zA-Z_0-9]{1,}[!@#$%^&*][a-zA-Z_0-9]{1,}$", message = "password must have 1 Special Character")
     public String password;
 

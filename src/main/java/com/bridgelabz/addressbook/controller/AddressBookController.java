@@ -8,7 +8,10 @@ import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 
+
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/addressBook")
 public class AddressBookController {
@@ -17,7 +20,7 @@ public class AddressBookController {
         private IContactBusinessLogics iServices;
 
     @PostMapping("/save")
-    public ResponseDTO saveContact(@Valid @RequestBody ContactDTO contactDTO){
+    public ResponseDTO saveContact( @RequestBody ContactDTO contactDTO){
         return  iServices.addContact(contactDTO);
     }
 
@@ -27,7 +30,7 @@ public class AddressBookController {
     }
 
     @GetMapping("/getAllContact")
-    public String getAllContact(){
+    public List<ContactData> getAllContact(){
         return iServices.getAllContact();
     }
 
@@ -43,8 +46,8 @@ public class AddressBookController {
 
     @PutMapping("/editContact/{userToken}")
     public String updateContactByID(@Valid @RequestBody ContactDTO contactDTO, @PathVariable String userToken){
-        ContactData contactData = new ContactData(contactDTO);
-        return iServices.updateContactDetailsByToken(contactData, userToken);
+//        ContactData contactData = new ContactData(contactDTO);
+        return iServices.updateContactDetailsByToken(contactDTO, userToken);
     }
 
 }

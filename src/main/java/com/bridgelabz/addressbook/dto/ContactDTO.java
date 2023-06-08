@@ -40,9 +40,9 @@ public class ContactDTO {
     @NotNull(message = "PhoneNumber Cannot be empty")
     @Pattern(regexp = "^[6789][0-9]{9}$", message = "PhoneNumber must be of 10 digits and in format of 9xxxxxxxxx or 8xxxxxxxxx or 7xxxxxxxxx or 6xxxxxxxxx only")
     public String phoneNumber;
-
-    @NotNull(message = "Aadhar Card Number Cannot be empty")
-    @Pattern(regexp = "^[1-9][0-9]{15}$", message = "Aadhar Card Number must be of 16 digits start with non-zero digit")
-    public String aadharCardNumber;
+//
+//    @NotNull(message = "Aadhar Card Number Cannot be empty")
+//    @Pattern(regexp = "^[1-9][0-9]{15}$", message = "Aadhar Card Number must be of 16 digits start with non-zero digit")
+//    public String aadharCardNumber;
 
 }

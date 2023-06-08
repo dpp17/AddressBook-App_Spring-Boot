@@ -24,10 +24,9 @@ public class ContactData {
     private String email;
     private String zip;
     private String phoneNumber;
-    private String aadharCardNumber;
 
 
-    public ContactData(ContactDTO contactDTO) {
+    public void updateContactData(ContactDTO contactDTO) {
         this.firstName = contactDTO.getFirstName();
         this.lastName = contactDTO.getLastName();
         this.address = contactDTO.getAddress();
@@ -36,6 +35,8 @@ public class ContactData {
         this.email = contactDTO.getEmail();
         this.zip = contactDTO.getZip();
         this.phoneNumber = contactDTO.getPhoneNumber();
-        this.aadharCardNumber = contactDTO.getAadharCardNumber();
+    }
+    public ContactData(ContactDTO contactDTO) {
+        this.updateContactData(contactDTO);
     }
 }
